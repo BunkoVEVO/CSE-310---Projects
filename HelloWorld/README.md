@@ -4,7 +4,7 @@ For this project, I made a simple C++ program that displays "Hello World!" in th
 
 The purpose of this software is mainly to practice the basics of C++, like using `main()`, `std::cout`, and running a program through Visual Studio.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video]([http://youtube.link.goes.here](https://youtu.be/nigxzSfCuDk))
 
 # Development Environment
 
