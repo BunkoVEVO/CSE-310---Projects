@@ -13,7 +13,7 @@ and user input.
 
 ## Software Demo Video
 
-[Software Demo Video](PUT-YOUR-YOUTUBE-LINK-HERE)
+[Software Demo Video](https://www.youtube.com/watch?v=CqeztKF6i08)
 
 ## Development Environment
 
