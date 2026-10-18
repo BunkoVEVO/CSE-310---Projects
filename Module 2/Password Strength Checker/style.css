@@ -1,0 +1,268 @@
+
+/* Basic page setup */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202938;
+    background: #f3f5f9;
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container {
+    width: min(100% - 32px, 620px);
+    margin: 0 auto;
+    padding: 40px 0 20px;
+}
+
+/* Header */
+.page-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.lock-icon {
+    font-size: 2.5rem;
+}
+
+.page-header h1 {
+    margin: 8px 0;
+    font-size: clamp(1.7rem, 5vw, 2.3rem);
+    line-height: 1.2;
+}
+
+.page-header p {
+    color: #596579;
+    margin: 10px 0;
+}
+
+/* Main card */
+.checker-card {
+    background: #ffffff;
+    padding: 28px;
+    border: 1px solid #e0e5ed;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgb(25 40 70 / 8%);
+}
+
+.checker-card h2 {
+    margin-top: 0;
+}
+
+.privacy-note,
+.input-help {
+    color: #596579;
+    font-size: 0.9rem;
+}
+
+/* Input */
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.input-group {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #aeb8c8;
+    border-radius: 8px;
+    font: inherit;
+}
+
+input:focus-visible,
+button:focus-visible {
+    outline: 3px solid #75a7ff;
+    outline-offset: 3px;
+}
+
+button {
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+#toggle-password {
+    padding: 10px 14px;
+    color: #263a62;
+    background: #edf2fa;
+    border: 1px solid #cbd5e3;
+}
+
+.check-button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 13px;
+    color: #ffffff;
+    background: #2457c5;
+    border: none;
+}
+
+.check-button:hover {
+    background: #1946a5;
+}
+
+#toggle-password:hover {
+    background: #dfe8f7;
+}
+
+/* Results */
+.results {
+    border-top: 1px solid #e0e5ed;
+    margin-top: 28px;
+    padding-top: 24px;
+}
+
+.results h2 {
+    margin-bottom: 18px;
+}
+
+.strength-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.strength-track {
+    width: 100%;
+    height: 12px;
+    overflow: hidden;
+    background: #e6eaf0;
+    border-radius: 999px;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0;
+    background: #b42318;
+    border-radius: 999px;
+    transition: width 0.25s ease;
+}
+
+.strength-bar.weak {
+    background: #c0392b;
+}
+
+.strength-bar.fair {
+    background: #b76e00;
+}
+
+.strength-bar.good {
+    background: #2475bd;
+}
+
+.strength-bar.strong {
+    background: #218653;
+}
+
+.score-text {
+    color: #596579;
+    font-size: 0.9rem;
+}
+
+/* Requirements checklist */
+.requirements {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 24px;
+}
+
+.requirements li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.status {
+    flex: 0 0 20px;
+    font-weight: 700;
+}
+
+.requirements li.met .status {
+    color: #187344;
+}
+
+.requirements li.met .status::after {
+    content: "✓";
+}
+
+.requirements li.met .status {
+    font-size: 0;
+}
+
+.requirements li.met .status::after {
+    font-size: 1rem;
+}
+
+/* Feedback */
+.feedback-box {
+    padding: 16px;
+    background: #f2f6fd;
+    border-left: 4px solid #2457c5;
+    border-radius: 6px;
+}
+
+.feedback-box h3 {
+    margin: 0 0 8px;
+}
+
+.feedback-box p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #596579;
+    font-size: 0.85rem;
+    padding-top: 20px;
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+    .container {
+        width: min(100% - 20px, 620px);
+        padding-top: 24px;
+    }
+
+    .checker-card {
+        padding: 20px 16px;
+    }
+
+    .input-group {
+        flex-wrap: wrap;
+    }
+
+    #toggle-password {
+        width: 100%;
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}

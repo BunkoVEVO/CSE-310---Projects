@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check password characteristics and learn how to create a stronger password.">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header class="page-header">
+            <div class="lock-icon" aria-hidden="true">🔐</div>
+            <h1>Password Strength Checker</h1>
+            <p>Check your password and learn how to make it stronger.</p>
+        </header>
+
+        <section class="checker-card" aria-labelledby="checker-heading">
+            <h2 id="checker-heading">Check your password</h2>
+            <p class="privacy-note">
+                Your password is checked locally in your browser
+                and is not sent to a server.
+            </p>
+
+            <form id="password-form">
+                <label for="password">Enter a password</label>
+
+                <div class="input-group">
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter a password..."
+                        autocomplete="off"
+                        autocapitalize="none"
+                        spellcheck="false"
+                        aria-describedby="input-help"
+                    >
+                    <button
+                        type="button"
+                        id="toggle-password"
+                        aria-pressed="false"
+                        aria-label="Show password"
+                    >
+                        Show
+                    </button>
+                </div>
+
+                <p id="input-help" class="input-help">
+                    Try different combinations to see how they score.
+                </p>
+
+                <button type="submit" class="check-button">
+                    Check Password
+                </button>
+            </form>
+
+            <section
+                id="results"
+                class="results"
+                aria-labelledby="results-heading"
+                aria-live="polite"
+                aria-atomic="false"
+                hidden
+            >
+                <h2 id="results-heading">Password Results</h2>
+
+                <div class="strength-header">
+                    <span>Strength</span>
+                    <strong id="strength-label">Not checked</strong>
+                </div>
+
+                <div
+                    class="strength-track"
+                    id="strength-track"
+                    role="progressbar"
+                    aria-label="Password strength score"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="0"
+                >
+                    <div id="strength-bar" class="strength-bar"></div>
+                </div>
+
+                <p id="score-text" class="score-text"></p>
+
+                <h3>Password requirements</h3>
+                <ul id="requirements" class="requirements">
+                    <li data-rule="length">
+                        <span class="status" aria-hidden="true">○</span>
+                        At least 12 characters
+                    </li>
+                    <li data-rule="uppercase">
+                        <span class="status" aria-hidden="true">○</span>
+                        At least one uppercase letter (A–Z)
+                    </li>
+                    <li data-rule="lowercase">
+                        <span class="status" aria-hidden="true">○</span>
+                        At least one lowercase letter (a–z)
+                    </li>
+                    <li data-rule="number">
+                        <span class="status" aria-hidden="true">○</span>
+                        At least one number (0–9)
+                    </li>
+                    <li data-rule="special">
+                        <span class="status" aria-hidden="true">○</span>
+                        At least one special character
+                    </li>
+                </ul>
+
+                <div class="feedback-box">
+                    <h3>How to improve</h3>
+                    <p id="feedback">
+                        Enter a password to receive suggestions.
+                    </p>
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <p>
+                CSE 310 – Applied Programming |
+                JavaScript Module Project
+            </p>
+        </footer>
+    </main>
+</body>
+</html>
