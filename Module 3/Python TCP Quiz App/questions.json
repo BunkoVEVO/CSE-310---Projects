@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "question": "What does TCP stand for?",
+    "choices": [
+      "A. Transmission Control Protocol",
+      "B. Transfer Computer Program",
+      "C. Terminal Connection Process"
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 2,
+    "question": "What identifies a device on an IP network?",
+    "choices": [
+      "A. File address",
+      "B. IP address",
+      "C. Web title"
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 3,
+    "question": "What is the purpose of a port number?",
+    "choices": [
+      "A. Identify an application or service",
+      "B. Increase screen resolution",
+      "C. Store a file"
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 4,
+    "question": "What format does this project use to exchange messages?",
+    "choices": [
+      "A. JPEG",
+      "B. JSON",
+      "C. MP3"
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 5,
+    "question": "Which program waits for incoming connections?",
+    "choices": [
+      "A. Server",
+      "B. Client",
+      "C. Text editor"
+    ],
+    "answer": "A"
+  }
+]
