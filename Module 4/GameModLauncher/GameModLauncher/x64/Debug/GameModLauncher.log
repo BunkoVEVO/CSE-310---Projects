@@ -1,0 +1,55 @@
+﻿  Installing vcpkg dependencies to C:\Users\Thomas Hail\Documents\School\2026\Fall\CSE 310 - Applied Programming\w09\GameModLauncher\vcpkg_installed\x64-windows-static\
+  "C:\Users\Thomas Hail\vcpkg\vcpkg.exe" install  --x-wait-for-lock --triplet "x64-windows-static" --vcpkg-root "C:\Users\Thomas Hail\vcpkg\\" "--x-manifest-root=C:\Users\Thomas Hail\Documents\School\2026\Fall\CSE 310 - Applied Programming\w09\GameModLauncher\\" "--x-install-root=C:\Users\Thomas Hail\Documents\School\2026\Fall\CSE 310 - Applied Programming\w09\GameModLauncher\vcpkg_installed\x64-windows-static\\" 
+  Detecting compiler hash for triplet x64-windows...
+  Compiler found: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe
+  Detecting compiler hash for triplet x64-windows-static...
+  Compiler found: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe
+  The following packages will be built and installed:
+      sqlite3[core,json1]:x64-windows-static@3.54.1
+    * vcpkg-cmake:x64-windows@2025-08-07
+    * vcpkg-cmake-config:x64-windows@2026-07-21
+  Additional packages (*) will be modified to complete this operation.
+  Restored 2 package(s) from C:\Users\Thomas Hail\AppData\Local\vcpkg\archives in 20.4 ms. Use --debug to see more details.
+  Installing 1/3 vcpkg-cmake-config:x64-windows@2026-07-21...
+  vcpkg-cmake-config:x64-windows@2026-07-21 package ABI: 09293eccc6c5ba7e123aaa99b9aa43f64894a69da42b38d6d78aea147d108818
+  Elapsed time to handle vcpkg-cmake-config:x64-windows: 5.61 ms
+  Installing 2/3 vcpkg-cmake:x64-windows@2025-08-07...
+  vcpkg-cmake:x64-windows@2025-08-07 package ABI: c4eca8dd7bbdb5bc5f09fd2b3e32fd66e477a1296dc00b1d0b9afe7d53332c3e
+  Elapsed time to handle vcpkg-cmake:x64-windows: 9.28 ms
+  Installing 3/3 sqlite3[core,json1]:x64-windows-static@3.54.1...
+  sqlite3[core,json1]:x64-windows-static@3.54.1 package ABI: ff2e029399293db669ccf561775a3fdf4aa2c8b45aa31bbab813d9c3fd747646
+  Building sqlite3[core,json1]:x64-windows-static@3.54.1...
+  -- Using cached sqlite-autoconf-3540100.tar.gz
+  -- Cleaning sources at C:/Users/Thomas Hail/vcpkg/buildtrees/sqlite3/src/nf-3540100-0b4b6fce90.clean. Use --editable to skip cleaning for the packages you specify.
+  -- Extracting source C:/Users/Thomas Hail/vcpkg/downloads/sqlite-autoconf-3540100.tar.gz
+  -- Applying patch fix-arm-uwp.patch
+  -- Applying patch add-config-include.patch
+  -- Using source at C:/Users/Thomas Hail/vcpkg/buildtrees/sqlite3/src/nf-3540100-0b4b6fce90.clean
+  -- Configuring x64-windows-static
+  -- Building x64-windows-static-dbg
+  -- Building x64-windows-static-rel
+  -- Fixing pkgconfig file: C:/Users/Thomas Hail/vcpkg/packages/sqlite3_x64-windows-static/lib/pkgconfig/sqlite3.pc
+  -- Using cached msys2-mingw-w64-x86_64-pkgconf-1~3.0.7-1-any.pkg.tar.zst
+  -- Using cached msys2-msys2-runtime-3.6.10-4-x86_64.pkg.tar.zst
+  -- Using msys root at C:/Users/Thomas Hail/vcpkg/downloads/tools/msys2/d5586eb050429df1
+  -- Fixing pkgconfig file: C:/Users/Thomas Hail/vcpkg/packages/sqlite3_x64-windows-static/debug/lib/pkgconfig/sqlite3.pc
+  -- Installing: C:/Users/Thomas Hail/vcpkg/packages/sqlite3_x64-windows-static/share/sqlite3/usage
+  -- Performing post-build validation
+  Starting submission of sqlite3[core,json1]:x64-windows-static@3.54.1 to 1 binary cache(s) in the background
+  Elapsed time to handle sqlite3:x64-windows-static: 14 s
+  Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+  Packages installed in this vcpkg installation declare the following licenses:
+  MIT
+  blessing
+  sqlite3 provides pkgconfig bindings.
+  sqlite3 provides CMake targets:
+  
+      find_package(unofficial-sqlite3 CONFIG REQUIRED)
+      target_link_libraries(main PRIVATE unofficial::sqlite3::sqlite3)
+  
+  Waiting for 1 remaining binary cache submissions...
+  Completed submission of sqlite3[core,json1]:x64-windows-static@3.54.1 to 1 binary cache(s) in 679 ms (1/1)
+  All requested installations completed successfully in: 14 s
+  GameModLauncher.cpp
+LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+  GameModLauncher.vcxproj -> C:\Users\Thomas Hail\Documents\School\2026\Fall\CSE 310 - Applied Programming\w09\GameModLauncher\x64\Debug\GameModLauncher.exe
