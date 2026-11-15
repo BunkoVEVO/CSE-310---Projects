@@ -78,4 +78,38 @@ The program uses SQL commands for the main database operations:
 
 The application was developed using the following tools:
 
-- **Visual Studio 2026** – Used to write, build, and debug the
+- **Visual Studio 2026** – Used to write, build, and debug the C++ application.
+- **C++** – Main programming language used to develop the application.
+- **SQLite** – Relational database used to store game and mod information.
+- **vcpkg** – C++ package manager used to install and integrate the SQLite dependency.
+- **Git and GitHub** – Used for version control and publishing the project.
+
+### Programming Language and Libraries
+
+The project uses C++ and the SQLite C library.
+
+The `sqlite3.h` library provides the functions needed to connect to the database and execute SQL statements. The application uses SQLite functions such as `sqlite3_open`, `sqlite3_prepare_v2`, and `sqlite3_step` to interact with the database.
+
+The program also uses standard C++ libraries for input and output, strings, vectors, file handling, and other application functionality.
+
+The application uses Windows-specific functionality to locate Steam and scan its installed game libraries.
+
+## Useful Websites
+
+- [SQLite Documentation](https://www.sqlite.org/docs.html) - Official documentation for SQLite, including SQL commands and database functionality.
+- [SQLite C/C++ Interface](https://www.sqlite.org/cintro.html) - Information about using SQLite with C and C++ applications.
+- [Microsoft vcpkg Documentation](https://learn.microsoft.com/en-us/vcpkg/) - Instructions for installing and managing C++ dependencies.
+- [Microsoft Visual Studio Documentation](https://learn.microsoft.com/en-us/visualstudio/) - Resources for using Visual Studio to develop C++ applications.
+- [Steamworks Documentation](https://partner.steamgames.com/doc/home) - Information about Steam application IDs and Steam-related development.
+
+## Future Work
+
+There are several improvements I would like to make to Steam Mod Manager in the future:
+
+- Implement actual mod installation, enabling, disabling, and removal by managing files in the game's installation directories.
+- Add automatic mod updates by checking the original mod webpage or download source.
+- Improve Steam game discovery to handle more Steam library configurations and installation locations.
+- Add support for importing and exporting mod lists.
+- Improve the user interface to make managing games and mods easier.
+- Add better error handling and validation when working with database records and mod files.
+- Support additional mod sources and platforms beyond Steam-related games.
